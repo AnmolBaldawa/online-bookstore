@@ -1,0 +1,35 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url(/assets/fonts/FiraSans/FiraSans-Regular.ttf) format("truetype");
+}
+
+h1 {
+    font-family: 'Fira Sans';
+}
+
+body {
+    padding-top: 56px;
+}
+
+body, html {
+    height: 100%;
+}
+
+.footer {
+    position: absolute;
+    height: 60px;
+    bottom: 10px;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.content {
+    padding-bottom: 100px;
+}
