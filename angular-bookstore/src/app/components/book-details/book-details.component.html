@@ -11,23 +11,23 @@
             <!-- For displalying image -->
             <div class="col-12 col-md-4">
                 <div class="thumbnail">
-                    <img src="https://placehold.it/250x280" />
+                    <img [src]=book.imageUrl width="250" height="325" />
                 </div>
             </div>
 
             <!-- For displaying book info -->
             <div class="col-12 col-md-8">
                 
-                <h3>Intro to Python</h3>
+                <h3>{{book.name}}</h3>
                 <hr />
 
-                <p>Description goes here...</p>
+                <p>{{book.description}}</p>
                 <hr />
 
-                <h4>Price: <strong>&#8377;200</strong> </h4>
+                <h4>Price: <strong>{{book.unitPrice | currency: 'INR'}}</strong> </h4>
                 <hr  />
 
-                <h6>Quantity Available: 100</h6>
+                <h6>Quantity Available: {{book.unitsInStock}}</h6>
                 <hr />
 
                 <button class="btn btn-success mr-2 text-dark" routerLink="/books"><i class="fas fa-arrow-left"></i> Go back</button>
