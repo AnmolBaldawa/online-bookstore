@@ -12,6 +12,5 @@ public class RepositoryConfig implements RepositoryRestConfigurer {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
         config.exposeIdsFor(Book.class, BookCategory.class);
-        //config.getCorsRegistry().addMapping("/**").allowedOrigins("http://localhost:4200/");
     }
 }
